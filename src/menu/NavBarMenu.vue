@@ -1,13 +1,13 @@
 <template>
 <div>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
+  <nav class="navbar navbar-expand NavBar_shi">
     <!--      <a class="navbar-brand">預留網站名字</a>-->
     <a class="navbar-brand"></a>
     <div class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item   ">
         <router-link to="/ProjectHome" class="nav-link">
-          <font-awesome-icon icon="home"/>
-          test
+          <font-awesome-icon class="TheSameFontColor" icon="home"/>
+          <a class="TheSameFontColor">test</a>
         </router-link>
       </li>
       <li class="nav-item">
@@ -33,8 +33,8 @@
           <a class="dropdown-item" href="/profile">個人資料中心</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link">
+      <li class="nav-item ">
+        <a class="nav-link TheSameFontColor">
           <font-awesome-icon icon="sign-out-alt"/>
           LogOut
         </a>
@@ -51,6 +51,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style  >
+.NavBar_shi{
+  background-color: transparent !important;
+  box-shadow: none;
+  border-bottom: 1px solid #ddd;
+   color: #66615B;
+}
+.TheSameFontColor{
+  color: #66615B;
+}
 
 </style>

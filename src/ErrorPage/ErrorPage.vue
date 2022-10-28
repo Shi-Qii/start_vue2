@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    {{ reactiveDemo.key }}
+    {{reactiveDemo.key}}
   </div>
 </template>
 

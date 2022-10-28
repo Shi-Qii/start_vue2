@@ -16,6 +16,11 @@ export const router = new Router({
             path:'/ErrorPage',
             name:'ErrorPage' ,
             component:() => import('./ErrorPage/ErrorPage.vue')
+        },
+        {
+            path:'/MainFormPage',
+            name:'MainFormPage' ,
+            component:() => import('./warehouseSystem/MainFormPage.vue')
         }
     ]
 });
