@@ -20,7 +20,7 @@ export const router = new Router({
         {
             path:'/MainFormPage',
             name:'MainFormPage' ,
-            component:() => import('./warehouseSystem/MainFormPage.vue')
+            component:() => import('./components/CommonComponents/MainFormPage')
         }
     ]
 });
