@@ -16,6 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt);
 //VueCompositionAPI
+// vue2.6: vite-plugin-vue2@2.6.14 + vue-template-compiler@2.6.14 + @vue/composition-api
 import VueCompositionAPI from "@vue/composition-api";
 
 Vue.config.productionTip = false
