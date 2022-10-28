@@ -5,7 +5,7 @@
     <a class="navbar-brand"></a>
     <div class="navbar-nav mr-auto">
       <li class="nav-item">
-        <router-link to="/stockHome" class="nav-link">
+        <router-link to="/ProjectHome" class="nav-link">
           <font-awesome-icon icon="home"/>
           test
         </router-link>
