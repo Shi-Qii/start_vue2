@@ -1,16 +1,17 @@
 <template>
-  <div class="container-fluid">
+  <div>
 
     <!--上面**各項選單項目新增-->
     <NavBarMenu></NavBarMenu>
-    <div class="row">
-      <!--左邊**各項選單項目新增-->
-      <SideBarMenu/>
-      <!--中間**主畫面通過左邊或上面、各項選單連結跳頁-->
-      <div class=" col-9">
-        <router-view/>
-      </div>
+
+    <!--左邊**各項選單項目新增-->
+    <SideBarMenu/>
+    <SideBarPersonMenu/>
+    <!--中間**主畫面通過左邊或上面、各項選單連結跳頁-->
+    <div class=" col-12">
+      <router-view/>
     </div>
+
 
   </div>
 </template>
@@ -18,12 +19,13 @@
 <script>
 import NavBarMenu from './menu/NavBarMenu.vue'
 import SideBarMenu from './menu/SideBarMenu.vue'
+import SideBarPersonMenu from './menu/SideBarPersonMenu.vue'
 import {reactive, ref} from "@vue/composition-api";
 
 export default {
   name: "mainPage",
   components: {
-    NavBarMenu, SideBarMenu
+    NavBarMenu, SideBarMenu, SideBarPersonMenu
   },
   setup() {
 

@@ -26,6 +26,6 @@ export default {
 
 <style>
 .main_bg {
-  background-color: #f4f3ef;
+  background-color: #ffffff;
 }
 </style>

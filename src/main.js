@@ -4,7 +4,9 @@ import App from './App.vue';
 //先import 在引用
 // bootstrap-vue
 // https://bootstrap-vue.org/docs/components
-import 'bootstrap/dist/css/bootstrap.css';
+// Import Bootstrap and BootstrapVue CSS files (order is important)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import BootstrapVue from 'bootstrap-vue';
 // bootstrap
 Vue.use(BootstrapVue)

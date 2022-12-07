@@ -21,6 +21,16 @@ export const router = new Router({
             path:'/MainFormPage',
             name:'MainFormPage' ,
             component:() => import('./components/CommonComponents/MainFormPage')
+        },
+        {
+            path:'/In01',
+            name:'newIncome' ,
+            component:() => import('./components/InputPage/newIncome')
+        },
+        {
+            path:'/In02',
+            name:'newExpenditure' ,
+            component:() => import('./components/InputPage/newExpenditure')
         }
     ]
 });

@@ -1,7 +1,7 @@
 <template>
   <div class="col-2">
     <div>
-      <b-sidebar id="sidebar-1" aria-modal="true" backdropprop="true" aria-label="Sidebar with custom footer"
+      <b-sidebar id="sidebar-person" aria-modal="true" backdropprop="true" aria-label="Sidebar with custom footer"
                  no-header shadow>
         <template #footer="{ hide }">
           <div class="d-flex bg-dark text-light align-items-center px-3 py-2">
@@ -31,18 +31,13 @@ import {reactive} from "@vue/composition-api/dist/vue-composition-api";
 export default {
   name: "SideBarMenu",
   setup() {
-    // routerList
-    // 使用代號url 註解
-    // In01 新增收入
-    // In02 新增支出
-
     const routerList = reactive(
         [{
-          'name': '新增收入',
-          'toPath': 'In01'
+          'name': '基本資料',
+          'toPath': 'ProjectHome1'
         }, {
-          'name': '新增支出',
-          'toPath': 'In02'
+          'name': '狀態',
+          'toPath': 'MainFormPage'
         }])
 
     return {routerList}
